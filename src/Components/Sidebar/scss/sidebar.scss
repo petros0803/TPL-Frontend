@@ -1,0 +1,39 @@
+@import "../../../Constants/Colors/colors.scss";
+
+.sidebar--container {
+  width: 200px;
+  height: 100vh;
+  background-color: $light-green;
+  opacity: 90%;
+}
+
+.sidebar--logo {
+    padding-left: 6px;
+    padding-top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.sidebar--btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    li{
+        color: $white;
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 0px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    li:hover{
+        color: $purple;
+    }
+}

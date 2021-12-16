@@ -1,0 +1,26 @@
+export const SIDEBAR = {
+  HOME_RO: "Acasa",
+  HOME_EN: "Home",
+  TICKETS_RO: "Bilete si Abonamente",
+  TICKETS_EN: "Tickets and Subscriptions",
+  TIMETABLES_RO: "Program",
+  TIMETABLES_EN: "Timetables",
+  ROUTES_RO: "Linii",
+  ROUTES_EN: "Bus routes",
+  CONTACT_RO: "Contact",
+  CONTACT_EN: "Contact",
+  ARTICLES_RO: "Articole",
+  ARTICLES_EN: "Articles",
+  GALERY_RO: "Galerie",
+  GALERY_EN: "Galery",
+  ABOUT_US_RO: "Despre noi",
+  ABOUT_US_EN: "About us",
+  MANAGEMENT_RO: "Conducere",
+  MANAGEMENT_EN: "Management",
+  ARCHIVES_RO: "Arhiva Comunicate",
+  ARCHIVES_EN: "Archives",
+  ANNOUNCES_RO: "Anunturi",
+  ANNOUNCES_EN: "Announces",
+};
+
+export default SIDEBAR;
