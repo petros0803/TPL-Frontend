@@ -1,0 +1,101 @@
+@import "../../Constants/Colors/colors.scss";
+.authentication--container {
+  background-color: $white;
+  opacity: 90%;
+  border-radius: 20px;
+  width: 610px;
+  height: 730px;
+  margin: 0 auto;
+  align-self: center;
+
+  h1 {
+    text-align: center;
+    padding-top: 30px;
+    color: $purple;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 550px;
+    color: $gray;
+
+    .form--container {
+      justify-content: space-evenly;
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .inputs--container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        color: $red;
+        font-size: 12px;
+        margin-top: -12px;
+        width: 90%;
+        padding-left: 32px;
+        height: 15px;
+      }
+
+      p {
+        text-align: right;
+        width: 100%;
+        margin-right: 76px;
+        margin-top: -5px;
+        font-size: 14px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+
+    label {
+      align-self: flex-start;
+      padding-left: 40px;
+      margin-bottom: -10px;
+      font-size: 15px;
+    }
+
+    input {
+      max-width: 400px;
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border: 1px solid $gray;
+      height: 20px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .input-error {
+      border: 1px solid red;
+    }
+
+    button {
+      width: 200px;
+      height: 48px;
+      background-color: $purple;
+      color: $white;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 0 auto;
+      border: 0;
+      border-radius: 8px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  }
+}

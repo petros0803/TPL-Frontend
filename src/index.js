@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TestPage from "./Components/testPage";
 import "./index.css";
+import Main from "./Main";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TestPage />
+    <Main />
   </React.StrictMode>,
   document.getElementById("root")
 );
