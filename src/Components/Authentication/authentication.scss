@@ -1,4 +1,4 @@
-@import "../../../Constants/Colors/colors.scss";
+@import "../../Constants/Colors/colors.scss";
 .authentication--container {
   background-color: $white;
   opacity: 90%;
@@ -35,6 +35,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      span {
+        color: $red;
+        font-size: 12px;
+        margin-top: -12px;
+        width: 90%;
+        padding-left: 32px;
+        height: 15px;
+      }
+
+      p {
+        text-align: right;
+        width: 100%;
+        margin-right: 76px;
+        margin-top: -5px;
+        font-size: 14px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
     }
 
     label {
@@ -52,6 +74,14 @@
       border-radius: 8px;
       border: 1px solid $gray;
       height: 20px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .input-error {
+      border: 1px solid red;
     }
 
     button {

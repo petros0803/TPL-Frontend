@@ -1,10 +1,10 @@
 import React from "react";
 import "./authentication.scss";
 import { Form, Formik } from "formik";
-import { registerValidationSchema } from "../../../validations/register.validations";
-import { AUTHENTICATION } from "../../../Constants/authentication.constants";
+import { registerValidationSchema } from "../../validations/register.validations";
+import { AUTHENTICATION } from "../../Constants/authentication.constants";
 
-const Authentication = () => {
+const Register = () => {
   return (
     <div className="authentication--container">
       <div>
@@ -18,7 +18,7 @@ const Authentication = () => {
               [AUTHENTICATION.PASSWORD_RO]: "",
               [AUTHENTICATION.CONFIRM_PASSWORD_RO]: "",
             }}
-            validationSchema={registerValidationSchema()}
+            validationSchema={registerValidationSchema}
             onSubmit={(event) => event.preventDefault()}
           >
             {({
@@ -36,6 +36,12 @@ const Authentication = () => {
                     <div className="inputs--container">
                       <label>{AUTHENTICATION.FIRST_NAME_RO}</label>
                       <input
+                        className={
+                          touched[AUTHENTICATION.FIRST_NAME_RO] === true &&
+                          errors[AUTHENTICATION.FIRST_NAME_RO]?.length > 0
+                            ? "input-error"
+                            : ""
+                        }
                         name={AUTHENTICATION.FIRST_NAME_RO}
                         type="text"
                         onBlur={handleBlur}
@@ -45,8 +51,15 @@ const Authentication = () => {
                           !errors[AUTHENTICATION.FIRST_NAME_RO]
                         }
                       />
+                      <span>{errors[AUTHENTICATION.FIRST_NAME_RO]}</span>
                       <label>{AUTHENTICATION.LAST_NAME_RO}</label>
                       <input
+                        className={
+                          touched[AUTHENTICATION.LAST_NAME_RO] === true &&
+                          errors[AUTHENTICATION.LAST_NAME_RO]?.length > 0
+                            ? "input-error"
+                            : ""
+                        }
                         name={AUTHENTICATION.LAST_NAME_RO}
                         type="text"
                         onBlur={handleBlur}
@@ -56,8 +69,15 @@ const Authentication = () => {
                           !errors[AUTHENTICATION.LAST_NAME_RO]
                         }
                       />
+                      <span>{errors[AUTHENTICATION.LAST_NAME_RO]}</span>
                       <label>{AUTHENTICATION.EMAIL_RO}</label>
                       <input
+                        className={
+                          touched[AUTHENTICATION.EMAIL_RO] === true &&
+                          errors[AUTHENTICATION.EMAIL_RO]?.length > 0
+                            ? "input-error"
+                            : ""
+                        }
                         name={AUTHENTICATION.EMAIL_RO}
                         type="text"
                         onBlur={handleBlur}
@@ -67,10 +87,17 @@ const Authentication = () => {
                           !errors[AUTHENTICATION.EMAIL_RO]
                         }
                       />
+                      <span>{errors[AUTHENTICATION.EMAIL_RO]}</span>
                       <label>{AUTHENTICATION.PASSWORD_RO}</label>
                       <input
+                        className={
+                          touched[AUTHENTICATION.PASSWORD_RO] === true &&
+                          errors[AUTHENTICATION.PASSWORD_RO]?.length > 0
+                            ? "input-error"
+                            : ""
+                        }
                         name={AUTHENTICATION.PASSWORD_RO}
-                        type="text"
+                        type="password"
                         onBlur={handleBlur}
                         onChange={handleChange}
                         isValid={
@@ -78,10 +105,20 @@ const Authentication = () => {
                           !errors[AUTHENTICATION.PASSWORD_RO]
                         }
                       />
+                      <span>{errors[AUTHENTICATION.PASSWORD_RO]}</span>
                       <label>{AUTHENTICATION.CONFIRM_PASSWORD_RO}</label>
+                      {console.log(touched[AUTHENTICATION.CONFIRM_PASSWORD_RO])}
+                      {console.log(errors[AUTHENTICATION.CONFIRM_PASSWORD_RO])}
                       <input
+                        className={
+                          touched[AUTHENTICATION.CONFIRM_PASSWORD_RO] ===
+                            true &&
+                          errors[AUTHENTICATION.CONFIRM_PASSWORD_RO]?.length > 0
+                            ? "input-error"
+                            : ""
+                        }
                         name={AUTHENTICATION.CONFIRM_PASSWORD_RO}
-                        type="text"
+                        type="password"
                         onBlur={handleBlur}
                         onChange={handleChange}
                         isValid={
@@ -89,9 +126,26 @@ const Authentication = () => {
                           !errors[AUTHENTICATION.CONFIRM_PASSWORD_RO]
                         }
                       />
+                      <span>{errors[AUTHENTICATION.CONFIRM_PASSWORD_RO]}</span>
+                      <p>
+                        {AUTHENTICATION.ALREADY_REGISTED_RO}
+                        <a href="/"> {AUTHENTICATION.LOGIN_RO}</a>
+                      </p>
                     </div>
-                    <div style={{margin:" 0 auto"}}>
-                      <button onSubmit={(event) => event.preventDefault()}> {AUTHENTICATION.REGISTER_RO} </button>
+                    <div
+                      style={{
+                        margin: "0 auto",
+                        width: "300px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <button onSubmit={(event) => event.preventDefault()}>
+                        {AUTHENTICATION.REGISTER_RO}
+                      </button>
+                      <p>
+                        {AUTHENTICATION.ALREADY_REGISTED_RO}
+                        <a href="/"> {AUTHENTICATION.LOGIN_RO}</a>
+                      </p>
                     </div>
                   </div>
                 </Form>
@@ -104,4 +158,4 @@ const Authentication = () => {
   );
 };
 
-export default Authentication;
+export default Register;
