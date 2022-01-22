@@ -1,0 +1,33 @@
+export const CONTACT = {
+  NAME_RO: "Nume",
+  NAME_EN: "full name",
+  EMAIL_RO: "Email",
+  EMAIL_EN: "Email",
+  PHONE_RO: "Telefon",
+  PHONE_EN: "Phone",
+  DESCRIPTION_RO: "Descriere",
+  DESCRIPTION_EN: "Description",
+};
+
+export const VALIDATIONS = {
+  NAME_REQUIRED_RO: "Numele este obligatoriu",
+  NAME_REQUIRED_EN: "Full name must be provided",
+  NAME_INVALID_RO: "Numele este invalid",
+  NAME_INVALID_EN: "Full name is invalid",
+  EMAIL_REQUIRED_RO: "Emailul este obligatoriu",
+  EMAIL_REQUIRED_EN: "Email must be provided",
+  EMAIL_INVALID_RO: "Emailul este invalid",
+  EMAIL_INVALID_EN: "Email is invalid",
+  PHONE_REQUIRED_RO: "Numarul de telefon este obligatoriu",
+  PHONE_REQUIRED_EN: "Phone number must be provided",
+  PHONE_INVALID_RO: "Numarul de telefon este invalid",
+  PHONE_INVALID_EN: "Phone number is invalid",
+  DESCRIPTION_REQUIRED_RO: "Descrierea este obligatorie",
+  DESCRIPTION_REQUIRED_EN: "A description must be provided",
+  DESCRIPTION_INVALID_RO: "Descrierea este invalid",
+  DESCRIPTION_INVALID_EN: "Description is invalid",
+  DESCRIPTION_MIN_LENGTH_RO: "Descrierea este prea scurta. Minim 10 de caractere.",
+  DESCRIPTION_MIN_LENGTH_EN: "Description is invalid",
+  DESCRIPTION_MAX_LENGTH_RO: "Descrierea este prea lunga. Maxim 200 de caractere.",
+  DESCRIPTION_MAX_LENGTH_EN: "Description is invalid",
+};

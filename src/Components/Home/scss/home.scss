@@ -1,0 +1,106 @@
+@import "../../../Constants/Colors/colors.scss";
+
+.home--container {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: rgba($white, 0.95);
+  margin: 0 auto;
+  align-self: center;
+  padding: 40px 75px;
+  max-width: 1500px;
+
+  .image-text--container {
+    display: flex;
+    justify-content: center;
+    height: 361px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+    .image--text--background {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 60%);
+      width: 50%;
+      height: 29%;
+    }
+
+    .image--text--title {
+      font-size: 20px;
+      line-height: 23.5px;
+      font-weight: 400px;
+      text-align: center;
+      padding-top: 10px;
+      color: white;
+    }
+
+    .image--text {
+      padding: 20px;
+      color: white;
+      text-indent: 30px;
+      p {
+        margin: 5px 0px;
+      }
+    }
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+      // max-width: 1070px;
+      height: 400px;
+    }
+  }
+
+  .announcement--container {
+    margin-top: 30px;
+  }
+  .announcement--title {
+    margin-top: 25px;
+    p {
+      font-size: 21px;
+      line-height: 42px;
+      font-weight: 400px;
+      margin: 0;
+    }
+  }
+
+  .announcement--each--container {
+    // background-color: rgba(196, 196, 196, 45%);
+    border: 1px solid $purple;
+    border-radius: 10px;
+    margin: 8px 0px;
+    width: 420px;
+    height: 300px;
+
+    hr {
+      border-color: rgba(86, 3, 176, 0.6);
+      margin: 5px 20px;
+    }
+
+    h1 {
+      padding: 5px 50px;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0px 20px;
+      text-indent: 30px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-height: 1200px) {
+  .home--container {
+    width: 85%;
+    height: 88%;
+  }
+}

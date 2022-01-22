@@ -1,0 +1,62 @@
+@import "../../../../Constants/Colors/colors.scss";
+
+.announcement--container {
+  width: 45%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: rgba($white, 0.95);
+  margin: 0 auto;
+  align-self: center;
+  padding: 40px 75px;
+  max-width: 1500px;
+
+  img {
+    margin: 0px 20px 0px 20px;
+    background-color: $purple;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    margin-right: 10px;
+  }
+
+  .react-pdf__Document {
+    margin-top: -30px;
+  }
+
+  .react-pdf__Page__canvas {
+    margin: 0 auto;
+  }
+
+  .announcement--buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    img {
+      margin: 0px 20px 0px 20px;
+      background-color: $purple;
+      border-radius: 5px;
+      padding: 3px;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
+  button {
+    width: 200px;
+    height: 48px;
+    background-color: $purple;
+    color: $white;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+}

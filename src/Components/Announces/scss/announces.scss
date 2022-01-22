@@ -1,0 +1,61 @@
+@import "../../../Constants/Colors/colors.scss";
+
+.announces--cointainer {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: rgba($white, 0.95);
+  margin: 0 auto;
+  align-self: center;
+  padding: 40px 75px;
+  max-width: 1500px;
+
+  .announcements--container {
+    margin-top: 10px;
+  }
+  .announcement--title {
+    p {
+      font-size: 21px;
+      line-height: 42px;
+      font-weight: 400px;
+      margin: 0;
+    }
+  }
+
+  .announcement--each--container {
+    border: 1px solid $purple;
+    border-radius: 10px;
+    margin: 8px 0px;
+    width: 420px;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    hr {
+      border-color: rgba(86, 3, 176, 0.6);
+      margin: 5px 20px;
+    }
+
+    h1 {
+      padding: 5px 50px;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0px 20px;
+      text-indent: 30px;
+      font-size: 16px;
+    }
+  }
+  .announcement-all--container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 750px;
+    padding-right: 5px;
+  }
+}

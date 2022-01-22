@@ -1,0 +1,24 @@
+@import "../../../../Constants/Colors/colors.scss";
+
+.search-languages--container {
+  display: flex;
+  justify-content: space-between;
+
+  .search-input {
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    border-color: $purple;
+  }
+  input:focus {
+    outline: none;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin-left: -30px;
+  }
+}

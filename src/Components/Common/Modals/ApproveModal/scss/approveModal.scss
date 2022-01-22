@@ -1,0 +1,62 @@
+@import "../../../../../Constants/Colors/colors.scss";
+
+.modal--background--container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  position: absolute;
+
+  .modal--container {
+    width: 30%;
+    height: 65%;
+    background-color: white;
+    margin: 0 auto;
+    transform: translateY(25%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+
+    h1 {
+      font-size: 36px;
+      line-height: 40px;
+      color: $purple;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      padding: 10px 70px;
+      text-indent: 30px;
+      margin: 0;
+    }
+
+    .buttons--container {
+      padding: 35px 70px;
+      display: flex;
+      justify-content: space-around;
+
+      .buttons {
+        height: 50px;
+        width: 120px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .button-cancel {
+        background-color: rgba($color: red, $alpha: 1);
+        color: white;
+        border: none;
+      }
+
+      .button-send {
+        background-color: white;
+        color: $purple;
+        border: 1px solid $purple;
+      }
+    }
+  }
+}
