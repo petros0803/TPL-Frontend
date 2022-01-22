@@ -5,6 +5,8 @@ import { registerValidationSchema } from "../../validations/register.validations
 import { AUTHENTICATION } from "../../Constants/authentication.constants";
 
 const Authentication = () => {
+  const loginUser = async () => {};
+
   return (
     <div className="authentication--container" style={{ height: "640px" }}>
       <div>

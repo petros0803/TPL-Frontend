@@ -1,0 +1,44 @@
+@import "../../../Constants/Colors/colors.scss";
+
+.management--container {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: rgba($white, 0.95);
+  margin: 0 auto;
+  align-self: center;
+  padding: 40px 75px;
+  max-width: 1500px;
+
+  .persons--container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: auto;
+    height: 760px;
+    margin-top: 30px;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .person--container {
+    flex-basis: 22%;
+    text-align: center;
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid $purple;
+    border-radius: 5px;
+
+    .download-img {
+      height: 20px;
+      padding: 7px 20px 7px 20px;
+      background-color: $purple;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+}

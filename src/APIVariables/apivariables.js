@@ -1,0 +1,3 @@
+const APIVARIABLES = {
+  LOGIN: "",
+};

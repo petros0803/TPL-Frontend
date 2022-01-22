@@ -1,0 +1,65 @@
+@import "../../../Constants/Colors/colors.scss";
+
+.prices--container {
+  width: 70%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: rgba($white, 0.95);
+  margin: 0 auto;
+  align-self: center;
+  padding: 40px 75px;
+  max-width: 1500px;
+
+  .buttons--container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    button {
+      width: 200px;
+      height: 48px;
+      background-color: $purple;
+      color: $white;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 0 auto;
+      border: 0;
+      border-radius: 8px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+    }
+  }
+  h1 {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 90%;
+  }
+
+  li {
+    line-height: 30px;
+  }
+
+  p {
+    line-height: 23px;
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+
+    td {
+      height: 30px;
+      border: 1px solid $purple;
+    }
+  }
+
+  .content--div {
+    padding: 0px 10px;
+    height: 710px;
+    overflow-y: auto;
+  }
+}
