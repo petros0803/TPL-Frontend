@@ -4,7 +4,7 @@ import SearchLanguages from "../Common/SearchLanguage/SearchLanguages";
 import { Form, Formik } from "formik";
 import { CONTACT } from "../../Constants/contact.constants";
 import { contactValidationSchema } from "../../validations/contact.validations";
-
+import LocalizedMessage from "../Localization/LocalizedMessage";
 //scss
 import "./scss/contact.scss";
 import ApproveModal from "../Common/Modals/ApproveModal/ApproveModal";
@@ -18,12 +18,10 @@ const Contact = () => {
       <div className="image--text--container">
         <div className="map-text">
           <p>
-            Contact TPL Suceava Pentru sugestii sau sesizări ne puteţi contacta
-            la: contact@tpl-sv.ro sau Tel/Fax(secretariat): 0330 401 442
+            <LocalizedMessage of="CONTACT_TEXT11" />,
           </p>
           <p>
-            SC TRANSPORT PUBLIC LOCAL SA Str. Traian Vuia nr. 5 A, Suceava, 720
-            021, ROMANIA
+            <LocalizedMessage of="CONTACT_TEXT12" />,
           </p>
         </div>
         <div>
@@ -32,7 +30,9 @@ const Contact = () => {
       </div>
       <div>
         <div className="contact-us--title">
-          <h1>Contacteaza TPL Suceava</h1>
+          <h1>
+            <LocalizedMessage of="CONTACT_TEXT13" />,
+          </h1>
         </div>
         <Formik
           initialValues={{

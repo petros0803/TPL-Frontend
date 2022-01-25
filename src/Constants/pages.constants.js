@@ -1,26 +1,26 @@
 export const PAGES = [
   {
     value: "/",
-    label: "Acasa Home",
+    label: "SIDEBAR_HOME",
   },
   {
     value: "/contact",
-    label: "Contact",
+    label: "SIDEBAR_CONTACT",
   },
   {
     value: "/announces",
-    label: "Anunturi",
+    label: "SIDEBAR_ANNOUNCES",
   },
   {
     value: "/management",
-    label: "Conducere Management",
+    label: "SIDEBAR_MANAGEMENT",
   },
   {
     value: "/aboutus",
-    label: "Despre noi About us",
+    label: "SIDEBAR_ABOUT_US",
   },
   {
     value: "/prices",
-    label: "Bilete si Abonamente Prices",
+    label: "SIDEBAR_TICKETS",
   },
 ];

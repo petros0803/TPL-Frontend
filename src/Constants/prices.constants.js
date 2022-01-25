@@ -1,60 +1,61 @@
+import LocalizedMessage from "../Components/Localization/LocalizedMessage";
 export const PRICES = [
   {
     id: 0,
-    label: "Tarife",
+    label: <LocalizedMessage of="PRICE_BTN_TEXT" />,
   },
   {
     id: 1,
-    label: "Gratuitati",
+    label: <LocalizedMessage of="FREE_BTN_TEXT" />,
   },
   {
     id: 2,
-    label: "Puncte de eliberare",
+    label: <LocalizedMessage of="RELEASE_BTN_TEXT" />,
   },
   {
     id: 3,
-    label: "Sanctiuni",
+    label: <LocalizedMessage of="PENALTY_BTN_TEXT" />,
   },
   {
     id: 4,
-    label: "Pierdute si gasite",
+    label: <LocalizedMessage of="LOST_BTN_TEXT" />,
   },
 ];
 
 export const TICKETS = [
   {
     id: 0,
-    label: "Abonament lunar",
+    label: <LocalizedMessage of="PRICE_LABEL_TEXT0" />,
     value: "75 lei",
   },
   {
     id: 1,
-    label: "Abonament 15 zile",
+    label: <LocalizedMessage of="PRICE_LABEL_TEXT1" />,
     value: "46 lei",
   },
   {
     id: 2,
-    label: "Abonament 7 zile",
+    label: <LocalizedMessage of="PRICE_LABEL_TEXT2" />,
     value: "27 lei",
   },
   {
     id: 3,
-    label: "Abonament pentru o zi",
+    label: <LocalizedMessage of="PRICE_LABEL_TEXT3" />,
     value: "6 lei",
   },
   {
     id: 4,
-    label: "Abonament nenominal",
+    label: <LocalizedMessage of="PRICE_LABEL_TEXT4" />,
     value: "115 lei",
   },
   {
     id: 5,
-    label: "Abonament subventionat pentru elevi*",
-    value: "Gratuit",
+    label: <LocalizedMessage of="PRICE_LABEL_TEXT5" />,
+    value: <LocalizedMessage of="PRICE_LABEL_PRICE_TEXT5" />,
   },
   {
     id: 6,
-    label: "Abonament subventionat pentru studenti**",
+    label: <LocalizedMessage of="PRICE_LABEL_TEXT6" />,
     value: "37.50 lei",
   },
 ];
@@ -62,56 +63,47 @@ export const TICKETS = [
 export const FINES = [
   {
     id: 0,
-    label:
-      "Prejudicierea bunurilor infrastructurii tehnico-edilitare de transport (dotările din staţiile de călători, afişajul, panourile indicatoare etc)",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT4" />,
     value: "250 - 1000",
   },
   {
     id: 1,
-    label:
-      "Agresarea fizică sau verbală a conducătorului mijlocului de transport, a organelor de control ori a călătorilor",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT5" />,
     value: "250 - 1000",
   },
   {
     id: 2,
-    label:
-      "Solicitarea nejustificată, adresată conducătorului autovehiculului, pentru oprirea între staţii, pentru urcare/coborâre",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT6" />,
     value: "50 - 300",
   },
   {
     id: 3,
-    label:
-      "Introducerea în salonul mijlocului de transport în comun de obiecte sau substanţe urât mirositoare ori periculoase pentru securitatea pasagerilor",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT7" />,
     value: "100 - 500",
   },
   {
     id: 4,
-    label:
-      "Introducerea în salonul mijlocului de transport în comun a animalelor de companie",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT8" />,
     value: "100 - 500",
   },
   {
     id: 5,
-    label:
-      "Urcarea în salonul mijlocului de transport în stare vizibilă de ebrietate şi refuzul de a coborî la solicitarea personalului deservent ca urmare a disconfortului produs celorlalţi călători",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT9" />,
     value: "50 - 500",
   },
   {
     id: 6,
-    label:
-      "Producerea de zgomote, larmă ori folosirea de către călători, în salonul mijlocului de transport, a aparaturii audio la un nivel care produce disconfortul celorlaţi participanţi la călătorie",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT10" />,
     value: "50 - 500",
   },
   {
     id: 7,
-    label:
-      "Fumatul, scuipatul, consumul de alcool, de seminţe şi îngheţată, aruncarea de hârtii sau a resturilor de orice fel în salonul mijlocului de transport.",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT11" />,
     value: "50 - 500",
   },
   {
     id: 8,
-    label:
-      "Refuzul de a se legitima la solicitarea expresă a personalului cu atribuţii de taxare şi control, identificat prin ecuson sau legitimaţie de serviciu",
+    label: <LocalizedMessage of="PENALTY_TABLE_TEXT12" />,
     value: "100 - 500",
   },
 ];
@@ -119,109 +111,109 @@ export const FINES = [
 export const LOST_ITEMS = [
   {
     id: 0,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "MĂRGINEAN D. CONSTANTIN",
     obs: "Permanent",
   },
   {
     id: 1,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "PETROSCEAC BOGDAN CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 2,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "WILFRIED NIKOLAS DERSCANU",
     obs: "Permanent",
   },
   {
     id: 3,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "RAZVAN AILENEI SEBASTIAN",
     obs: "Permanent",
   },
   {
     id: 4,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "HINCU ANDREI",
     obs: "Permanent",
   },
   {
     id: 5,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "COJOCARU ANDREI",
     obs: "Permanent",
   },
   {
     id: 6,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "LUCIAN MIRIUTA",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },
   {
     id: 7,
-    doc: "Legitimaţie D.G.A.S.P.C.",
+    doc: <LocalizedMessage of="LOST_TABLE_TEXT3" />,
     name: "DOLHESCU CIPRIAN",
     obs: "Permanent",
   },

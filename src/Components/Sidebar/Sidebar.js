@@ -20,6 +20,9 @@ const Sidebar = () => {
     );
   }, []);
 
+  console.log(PAGES);
+  console.log(Object.values(SIDEBAR)[1]);
+
   return (
     <div className="sidebar--container">
       <img src={LogoTPL} alt="Logo TPL" className="sidebar--logo" />
@@ -36,8 +39,9 @@ const Sidebar = () => {
                 key={elemIndex}
                 onClick={() => {
                   PAGES.forEach((page) => {
-                    page.label.includes(Object.values(SIDEBAR)[elemIndex]) &&
-                      redirectToPage(page.value);
+                    page.label.includes(
+                      Object.values(SIDEBAR)[elemIndex].props.of
+                    ) && redirectToPage(page.value);
                   });
                 }}
               >
