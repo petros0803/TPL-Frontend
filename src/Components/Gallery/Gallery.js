@@ -15,8 +15,6 @@ const Gallery = () => {
     setIsModalOpen(true);
   };
 
-  console.log(isModalOpen);
-
   return (
     <div className="gallery--container">
       <SearchLanguages />
