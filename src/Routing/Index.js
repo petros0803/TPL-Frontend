@@ -17,6 +17,7 @@ import "../main.scss";
 import Management from "../Components/Management/Management";
 import AboutUs from "../Components/AboutUs/AboutUs";
 import Prices from "../Components/Prices/Prices";
+import Gallery from "../Components/Gallery/Gallery";
 
 const PublicRoutes = () => {
   return (
@@ -35,6 +36,7 @@ const PublicRoutes = () => {
             <Route path={APP.MANAGEMENT} element={<Management />} />
             <Route path={APP.ABOUTUS} element={<AboutUs />} />
             <Route path={APP.PRICES} element={<Prices />} />
+            <Route path={APP.GALLERY} element={<Gallery />} />
           </Routes>
         </div>
       </div>

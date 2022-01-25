@@ -3,9 +3,23 @@ import "./authentication.scss";
 import { Form, Formik } from "formik";
 import { registerValidationSchema } from "../../validations/register.validations";
 import { AUTHENTICATION } from "../../Constants/authentication.constants";
+import {BE, API_VARIABLES} from "../../APIVariables/apivariables"
+import axios from "axios";
 
 const Authentication = () => {
-  const loginUser = async () => {};
+
+  const loginUser = async (values) => {
+    console.log(values)
+    const res = await axios.post(BE.BASE_URL + API_VARIABLES.LOGIN,
+    {
+      email: values.Email,
+      password: values.Password
+    })
+    if(res.status === 200){
+      localStorage.setItem("user", JSON.stringify(res.data))
+      window.location.href = ("/")
+    }
+  };
 
   return (
     <div className="authentication--container" style={{ height: "640px" }}>
@@ -83,7 +97,7 @@ const Authentication = () => {
                         textAlign: "center",
                       }}
                     >
-                      <button onSubmit={(event) => event.preventDefault()}>
+                      <button type="button" onClick={(event) => loginUser(values)}>
                         {AUTHENTICATION.LOGIN_RO}
                       </button>
                       <p>

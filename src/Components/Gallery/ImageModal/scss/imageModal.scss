@@ -1,0 +1,67 @@
+@import "../../../../Constants/Colors/colors.scss";
+
+.image-modal--container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.5s;
+  top: 0;
+
+  .image {
+    max-width: 1140px;
+    height: 400px;
+  }
+
+  .closeModal {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+.image-modal--container--close {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  animation: fadeOut 0.5s;
+  top: 0;
+
+  .image {
+    max-width: 1140px;
+    height: 400px;
+  }
+
+  .closeModal {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

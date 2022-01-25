@@ -3,8 +3,22 @@ import "./authentication.scss";
 import { Form, Formik } from "formik";
 import { registerValidationSchema } from "../../validations/register.validations";
 import { AUTHENTICATION } from "../../Constants/authentication.constants";
+import { BE, API_VARIABLES } from "../../APIVariables/apivariables";
+import axios from "axios";
 
 const Register = () => {
+    const registerUser = async (values) => {
+      console.log(values);
+      const res = await axios.post(BE.BASE_URL + API_VARIABLES.REGISTER, {
+        email: values.Email,
+        password: values.Password,
+        name: `${values.Firstname} ${values.Lastname}`
+      });
+      if (res.status === 200) {
+        localStorage.setItem("user", JSON.stringify(res.data));
+        window.location.href = "/";
+      }
+    };
   return (
     <div className="authentication--container">
       <div>
@@ -31,7 +45,6 @@ const Register = () => {
             }) => {
               return (
                 <Form onSubmit={handleSubmit}>
-                  {console.log(errors)}
                   <div className="form--container">
                     <div className="inputs--container">
                       <label>{AUTHENTICATION.FIRST_NAME_RO}</label>
@@ -107,8 +120,6 @@ const Register = () => {
                       />
                       <span>{errors[AUTHENTICATION.PASSWORD_RO]}</span>
                       <label>{AUTHENTICATION.CONFIRM_PASSWORD_RO}</label>
-                      {console.log(touched[AUTHENTICATION.CONFIRM_PASSWORD_RO])}
-                      {console.log(errors[AUTHENTICATION.CONFIRM_PASSWORD_RO])}
                       <input
                         className={
                           touched[AUTHENTICATION.CONFIRM_PASSWORD_RO] ===
@@ -139,7 +150,10 @@ const Register = () => {
                         textAlign: "center",
                       }}
                     >
-                      <button onSubmit={(event) => event.preventDefault()}>
+                      <button
+                        type="button"
+                        onClick={(event) => registerUser(values)}
+                      >
                         {AUTHENTICATION.REGISTER_RO}
                       </button>
                       <p>
