@@ -1,8 +1,9 @@
 .main--container {
-    background-image: url("./Assets/Images/backgroundImage.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
+  background-image: url("./Assets/Images/backgroundImage.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
 }
