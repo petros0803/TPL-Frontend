@@ -4,23 +4,35 @@ export const PAGES = [
     label: "SIDEBAR_HOME",
   },
   {
+    value: "/prices",
+    label: "SIDEBAR_TICKETS",
+  },
+  {
+    value: "/timetables",
+    label: "SIDEBAR_TIMETABLES",
+  },
+  {
+    value: "/routes",
+    label: "SIDEBAR_ROUTES",
+  },
+  {
     value: "/contact",
     label: "SIDEBAR_CONTACT",
   },
   {
-    value: "/announces",
-    label: "SIDEBAR_ANNOUNCES",
-  },
-  {
-    value: "/management",
-    label: "SIDEBAR_MANAGEMENT",
+    value: "/gallery",
+    label: "SIDEBAR_GALERY",
   },
   {
     value: "/aboutus",
     label: "SIDEBAR_ABOUT_US",
   },
   {
-    value: "/prices",
-    label: "SIDEBAR_TICKETS",
+    value: "/management",
+    label: "SIDEBAR_MANAGEMENT",
+  },
+  {
+    value: "/announces",
+    label: "SIDEBAR_ANNOUNCES",
   },
 ];

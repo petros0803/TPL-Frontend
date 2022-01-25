@@ -35,8 +35,6 @@ const SearchLanguages = () => {
                 }}
                 className={state.language === "ro" && "selectedLanguage"}
               />
-              {console.log(localStorage.getItem("language"))}
-
               <img
                 src={ukFlag}
                 alt="Engleza"
