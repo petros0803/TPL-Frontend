@@ -44,7 +44,6 @@ const Contact = () => {
           validationSchema={contactValidationSchema}
           onSubmit={(event) => {
             setIsModalOpen(true);
-            console.log(isModalOpen);
           }}
         >
           {({

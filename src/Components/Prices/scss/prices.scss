@@ -30,6 +30,14 @@
       letter-spacing: 0.5px;
       cursor: pointer;
     }
+
+    button:hover {
+      background-color: $light-green;
+    }
+
+    .button-current-page {
+      background-color: $light-green;
+    }
   }
   h1 {
     margin: 0 auto;
@@ -61,5 +69,6 @@
     padding: 0px 10px;
     height: 710px;
     overflow-y: auto;
+    margin-top: 20px;
   }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Localization from './Localization';
-import { string } from 'prop-types';
-import Context from './Context';
+import Localization from "./Localization";
+import { string } from "prop-types";
+import Context from "./Context";
 
 class UpdateLanguage extends React.Component {
   render() {

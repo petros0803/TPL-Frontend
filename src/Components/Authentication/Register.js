@@ -31,7 +31,6 @@ const Register = () => {
             }) => {
               return (
                 <Form onSubmit={handleSubmit}>
-                  {console.log(errors)}
                   <div className="form--container">
                     <div className="inputs--container">
                       <label>{AUTHENTICATION.FIRST_NAME_RO}</label>
@@ -107,8 +106,6 @@ const Register = () => {
                       />
                       <span>{errors[AUTHENTICATION.PASSWORD_RO]}</span>
                       <label>{AUTHENTICATION.CONFIRM_PASSWORD_RO}</label>
-                      {console.log(touched[AUTHENTICATION.CONFIRM_PASSWORD_RO])}
-                      {console.log(errors[AUTHENTICATION.CONFIRM_PASSWORD_RO])}
                       <input
                         className={
                           touched[AUTHENTICATION.CONFIRM_PASSWORD_RO] ===
