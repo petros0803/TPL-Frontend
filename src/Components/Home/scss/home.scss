@@ -104,3 +104,10 @@
     height: 88%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .image--text--background {
+    width: 200% !important;
+    height: 40% !important;
+    margin-left: 290px;
+  }
+}
