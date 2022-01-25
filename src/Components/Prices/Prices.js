@@ -19,7 +19,11 @@ const Prices = () => {
       <div>
         <div className="buttons--container">
           {PRICES.map((elem) => (
-            <button key={elem.id} onClick={() => setCurrentPage(elem.id)}>
+            <button
+              key={elem.id}
+              className={elem.id === currentPage ? "button-current-page" : ""}
+              onClick={() => setCurrentPage(elem.id)}
+            >
               {elem.label}
             </button>
           ))}

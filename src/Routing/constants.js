@@ -11,6 +11,7 @@ const APP = {
   ABOUTUS: "/aboutus",
   PRICES: "/prices/",
   PRICES_ID: "/prices/:id",
+  GALLERY: "/gallery",
 };
 
 export { APP };
