@@ -3,8 +3,22 @@ import "./authentication.scss";
 import { Form, Formik } from "formik";
 import { registerValidationSchema } from "../../validations/register.validations";
 import { AUTHENTICATION } from "../../Constants/authentication.constants";
+import { BE, API_VARIABLES } from "../../APIVariables/apivariables";
+import axios from "axios";
 
 const Register = () => {
+    const registerUser = async (values) => {
+      console.log(values);
+      const res = await axios.post(BE.BASE_URL + API_VARIABLES.REGISTER, {
+        email: values.Email,
+        password: values.Password,
+        name: `${values.Firstname} ${values.Lastname}`
+      });
+      if (res.status === 200) {
+        localStorage.setItem("user", JSON.stringify(res.data));
+        window.location.href = "/";
+      }
+    };
   return (
     <div className="authentication--container">
       <div>
@@ -136,7 +150,10 @@ const Register = () => {
                         textAlign: "center",
                       }}
                     >
-                      <button onSubmit={(event) => event.preventDefault()}>
+                      <button
+                        type="button"
+                        onClick={(event) => registerUser(values)}
+                      >
                         {AUTHENTICATION.REGISTER_RO}
                       </button>
                       <p>
