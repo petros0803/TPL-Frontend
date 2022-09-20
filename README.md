@@ -1,2 +1,2 @@
 # TPL-Frontend
-Local Public Transport Suceava, Romania presentation website ideea
+Local Public Transport Suceava, Romania, presentation website idea
